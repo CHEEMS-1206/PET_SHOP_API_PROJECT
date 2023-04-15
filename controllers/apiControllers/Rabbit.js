@@ -42,6 +42,7 @@ export const postRabbit = async (req, res) => {
     petNickName: req.body.petNickName,
     petAge: req.body.petAge,
     petGender: req.body.petGender,
+    petImage : req.body.petImage,
     petPrice: req.body.petPrice,
     petId: req.body.petId,
     petBio: req.body.petBio,

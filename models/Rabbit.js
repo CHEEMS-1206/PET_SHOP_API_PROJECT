@@ -25,6 +25,11 @@ const rabbitSchema = new mongoose.Schema({
     type :String,
     requyired : true,
   },
+  petImage : {
+    type : String,
+    required : false,
+    default : "",
+  },
   petPrice: {
     type: Number,
     required: true,
