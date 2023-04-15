@@ -7,6 +7,9 @@ import homeRouter from "./routes/home.js";
 import rabbitRouter from "./routes/apiRoutes/Rabbit.js";
 import hamsterRouter from "./routes/apiRoutes/Hamster.js";
 import fishRouter from "./routes/apiRoutes/Fish.js";
+import dogRouter from './routes/apiRoutes/Dogs.js'
+import catRouter from "./routes/apiRoutes/Cats.js";
+import birdRouter from "./routes/apiRoutes/Birds.js";
 
 // importing database code and rendering for config folder 
 import './config/db.js';
@@ -24,6 +27,9 @@ app.use('/',homeRouter);
 app.use('/rabbit',rabbitRouter)
 app.use("/hamster", hamsterRouter);
 app.use("/fish", fishRouter);
+app.use("/dog", dogRouter);
+app.use("/cat", catRouter);
+app.use("/bird", birdRouter);
 
 // defining port for backend rest server
 const PORT = 5000;
