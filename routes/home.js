@@ -9,6 +9,7 @@ const homeRouter = express.Router()
 
 // get route for data to be displayed when browser calls '/'
 homeRouter.get("/", homeControllers.hitHome);
+homeRouter.get("/list", homeControllers.listAllPets);
 homeRouter.post("/", homeControllers.postHome);
 homeRouter.patch("/", homeControllers.updateHome);
 homeRouter.put("/", homeControllers.updateHome);
